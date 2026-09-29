@@ -1,18 +1,24 @@
-import os, sys, math
+"""Modul contoh kode berkualitas baik setelah perbaikan."""
 
-X = 10
 
-def Bad_Function_Name( A, B, C, D, E, F ):
-    global X
-    l = 1; O = 0
-    if A == True:
-        if B == False:
-            if C == None:
-                try:
-                    print(eval("A + B"))
-                    res = E[0] + F + l + O
-                except Exception:
-                    pass
-    return None
+def hitung_total(nilai_awal, nilai_tambahan):
+    """Menghitung total dari dua nilai.
 
-Bad_Function_Name(True, False, None, 1, [2], 3)
+    Args:
+        nilai_awal: Nilai pertama.
+        nilai_tambahan: Nilai kedua.
+
+    Returns:
+        Hasil penjumlahan kedua nilai.
+    """
+    return nilai_awal + nilai_tambahan
+
+
+def main():
+    """Fungsi utama program."""
+    hasil = hitung_total(10, 5)
+    print(f"Hasil: {hasil}")
+
+
+if __name__ == "__main__":
+    main()
